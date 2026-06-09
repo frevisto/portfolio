@@ -356,6 +356,10 @@ header.scrolled {
     background-color: var(--cor-programacao);
 }
 
+.categoria-financas {
+    background-color: var(--cor-financas);
+}
+
 /* Contato */
 .contato {
     background: linear-gradient(135deg, var(--cor-primaria), #ff8a66cc);
