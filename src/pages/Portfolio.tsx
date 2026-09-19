@@ -3,6 +3,7 @@ import { useApp } from "../context/AppContext";
 import { projects } from "../data/projects";
 import { ProjectCard } from "../components/ProjectCard";
 import { theme } from "../styles/theme";
+import { asset } from "../utils/helperAsset";
 
 // Página Portfolio
 export const Portfolio: React.FC = () => {
@@ -10,8 +11,6 @@ export const Portfolio: React.FC = () => {
 
   const translations = {
     pt: {
-      videoTitle: "Vídeo de Apresentação",
-      videoPlaceholder: "Seu vídeo de apresentação aparecerá aqui",
       accessCVButton: "Acessar CV",
     },
     en: {
@@ -72,7 +71,7 @@ export const Portfolio: React.FC = () => {
             }}
             controls
           >
-            <source src="/videos/port.mp4" type="video/mp4" />
+            <source src={asset("/videos/port.mp4")} type="video/mp4" />
             Seu navegador não suporta o elemento de vídeo.
           </video>
         </div>

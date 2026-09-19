@@ -1,4 +1,5 @@
 import React from "react";
+import { asset } from "../utils/helperAsset";
 import type { Project } from "../data/projects";
 import { useApp } from "../context/AppContext";
 import { theme } from "../styles/theme";
@@ -48,7 +49,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         }}
       >
         <img
-          src={project.image}
+          src={asset(project.image)}
           alt={title}
           style={{
             width: "100%",
