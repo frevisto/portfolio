@@ -90,7 +90,7 @@ export const Portfolio: React.FC = () => {
         }}
       >
         <img
-          src="/images/devFront.png"
+          src={asset("/images/devFront.png")}
           alt="Desenvolvedor Front-End"
           style={{
             maxWidth: "200px",
@@ -100,7 +100,7 @@ export const Portfolio: React.FC = () => {
         />
 
         <img
-          src="/images/devMob.png"
+          src={asset("/images/devMob.png")}
           alt="Desenvolvedor Mobile"
           style={{
             maxWidth: "200px",
@@ -111,7 +111,7 @@ export const Portfolio: React.FC = () => {
         />
 
         <img
-          src="/images/devBack.png"
+          src={asset("/images/devBack.png")}
           alt="Desenvolvedor Back-End"
           style={{
             maxWidth: "200px",
