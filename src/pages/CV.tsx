@@ -1,6 +1,7 @@
 import React from "react";
 import { useApp } from "../context/AppContext";
 import { theme } from "../styles/theme";
+import { asset } from "../utils/helperAsset";
 
 // Página CV
 export const CV: React.FC = () => {
@@ -10,7 +11,7 @@ export const CV: React.FC = () => {
     pt: {
       name: "Vitor Francisco",
       title: "Desenvolvedor de Software",
-      summary: `Perfil prático. Tenho mais de 10 anos de experiência em Linux, mais de 3 anos em JS, HTML, CSS e Postgres (Muito embora quando tinha 16 anos fiz algumas páginas em HTML puro), 3 anos usando o Express.js, 2 anos em React, Typescript e Python (criei uma integração de API's e fiz estudos sobre machine learning), um projeto simples para Esp32 em C, feito desde a fiação até a documentação do código (IoT), mexi um pouco com mongodb/mogoose e flutter, sei o básico de segurança de servidor (XSS stored e reflected (evitar tags), CSRF (links que executam scripts), CORS, RateLimiter, firewall), sei que existe e para que servem: NGINX e Apache Web Server.`,
+      summary: `Perfil prático. Tenho mais de 10 anos de experiência em Linux, mais de 3 anos em JS, HTML, CSS e Postgres (Muito embora quando tinha 16 anos fiz algumas páginas em HTML puro), 3 anos usando o Express.js, 2 anos em React, Typescript e Python (criei uma integração de API's e fiz estudos sobre machine learning), um projeto simples para Esp32 em C, feito desde a fiação até a documentação do código (IoT), mexi um pouco com MongoDB e Mongoose, assim como PowerBi, Dart/Flutter, sei o básico de segurança de servidor (XSS stored e reflected (evitar tags), CSRF (links que executam scripts), CORS, RateLimiter, firewall), sei que existem e para que servem: NGINX e Apache Web Server.`,
       sections: {
         experience: "Experiência Profissional",
         education: "Educação",
@@ -146,7 +147,7 @@ export const CV: React.FC = () => {
     en: {
       name: "Vitor Francisco",
       title: "Software Developer",
-      summary: `Hands-on profile. I have over 10 years of experience with Linux; over 3 years with JS, HTML, CSS, and Postgres (though I did create some pages using raw HTML back when I was 16); 3 years using Express.js; and 2 years with React, TypeScript, and Python (including building an API integration and studying machine learning). I also worked on a simple ESP32 project in C, from wiring to code documentation (IoT), and have dabbled in MongoDB/Mongoose and Flutter. I understand the basics of server security, including stored and reflected XSS (tag prevention), CSRF (script-executing links), CORS, Rate Limiting, and firewalls. I am aware of NGINX and Apache Web Server.`,
+      summary: `Hands-on profile. I have over 10 years of experience with Linux; over 3 years with JS, HTML, CSS, and Postgres (though I did create some pages using raw HTML back when I was 16); 3 years using Express.js; and 2 years with React, TypeScript, and Python (including building an API integration and studying machine learning). I also worked on a simple ESP32 project in C, from wiring to code documentation (IoT), such as PowerBI for Data Mining, and have dabbled in MongoDB/Mongoose and Dart/Flutter. I understand the basics of server security, including stored and reflected XSS (tag prevention), CSRF (script-executing links), CORS, Rate Limiting, and firewalls. I am aware of NGINX and Apache Web Server.`,
       sections: {
         experience: "Professional Experience",
         education: "Education",
@@ -379,7 +380,7 @@ export const CV: React.FC = () => {
                 }}
               >
                 <img
-                  src="/images/linkedin.svg"
+                  src={asset("/images/linkedin.svg")}
                   alt="LinkedIn"
                   style={{
                     width: "24px",
