@@ -115,30 +115,30 @@ export const CV: React.FC = () => {
         },
       ],
       skills: [
-        "Contabilidade",
         "APIs RESTful",
-        "Contabilidade Empresarial",
+        "Análise Financeira",
         "C/C++",
         "CSS3 / SCSS",
+        "Contabilidade",
+        "Contabilidade Empresarial",
+        "Design Responsivo",
         "Docker",
-        "Análise Financeira",
+        "Filosofia",
         "Flutter",
+        "Fotografia Profissional",
+        "Garantia de Qualidade de Software",
         "Git",
         "HTML5",
         "Ilustração",
         "JavaScript (ES6+)",
         "Linux",
         "Pedagogia",
-        "Filosofia",
         "PostgreSQL",
-        "Fotografia Profissional",
+        "Produção Visual",
         "Psicanálise",
         "Python",
         "React.js",
-        "Design Responsivo",
-        "Garantia de Qualidade de Software",
         "TypeScript",
-        "Produção Visual",
         "Vite",
       ],
       contactEmail: "vitor_faz@msn.com",
@@ -486,7 +486,7 @@ export const CV: React.FC = () => {
                       marginLeft: theme.spacing.md,
                     }}
                   >
-                  @ {exp.company}
+                    @ {exp.company}
                   </span>
                 </div>
                 <span

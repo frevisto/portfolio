@@ -51,7 +51,7 @@ export const Portfolio: React.FC = () => {
           style={{
             width: "100%",
             maxWidth: "1000px",
-            margin: `${theme.spacing['xs']} auto`,
+            margin: `${theme.spacing["xs"]} auto`,
             aspectRatio: "16 / 9",
             background: theme.colors.darker,
             borderRadius: "12px",
@@ -62,7 +62,7 @@ export const Portfolio: React.FC = () => {
             gap: theme.spacing.sm,
           }}
         >
-          <video 
+          <video
             style={{
               width: "100%",
               height: "100%",
@@ -82,17 +82,13 @@ export const Portfolio: React.FC = () => {
         style={{
           display: "flex",
           justifyContent: "center",
-          alignItems: "flex-end",
-          gap: "40px",
-          flexWrap: "wrap",
-          width: "100%",
-          padding: "40px 0",
+          alignItems: "center",
+          gap: "clamp(8px, 3vw, 40px)",
+          marginTop: '25px'
         }}
       >
         <img
-          id="badge1"
           src={asset("/images/devFront.png")}
-          alt="Desenvolvedor Front-End"
           style={{
             maxWidth: "clamp(90px, 20vw, 200px)",
             width: "100%",
@@ -108,14 +104,12 @@ export const Portfolio: React.FC = () => {
             maxWidth: "clamp(100px, 20vw, 200px)",
             width: "100%",
             height: "auto",
-            transform: "translateY(-80px)",
+            transform: "translateY(clamp(-80px, -10vw, -30px))",
           }}
         />
 
         <img
-          id="badge3"
           src={asset("/images/devBack.png")}
-          alt="Desenvolvedor Back-End"
           style={{
             maxWidth: "clamp(90px, 20vw, 200px)",
             width: "100%",
