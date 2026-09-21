@@ -37,6 +37,7 @@ export const theme = {
     normal: '0.2s ease-in-out',
     slow: '0.3s ease-in-out',
   },
+  
 };
 
 export type Theme = typeof theme;

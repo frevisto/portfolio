@@ -90,20 +90,22 @@ export const Portfolio: React.FC = () => {
         }}
       >
         <img
+          id="badge1"
           src={asset("/images/devFront.png")}
           alt="Desenvolvedor Front-End"
           style={{
-            maxWidth: "200px",
+            maxWidth: "clamp(90px, 20vw, 200px)",
             width: "100%",
             height: "auto",
           }}
         />
 
         <img
+          id="badge2"
           src={asset("/images/devMob.png")}
           alt="Desenvolvedor Mobile"
           style={{
-            maxWidth: "200px",
+            maxWidth: "clamp(100px, 20vw, 200px)",
             width: "100%",
             height: "auto",
             transform: "translateY(-80px)",
@@ -111,10 +113,11 @@ export const Portfolio: React.FC = () => {
         />
 
         <img
+          id="badge3"
           src={asset("/images/devBack.png")}
           alt="Desenvolvedor Back-End"
           style={{
-            maxWidth: "200px",
+            maxWidth: "clamp(90px, 20vw, 200px)",
             width: "100%",
             height: "auto",
           }}
